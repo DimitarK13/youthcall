@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="mk">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-79SFERCQZ5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-79SFERCQZ5');
+    </script>
+
+    <!-- Meta tags and title -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-adsense-account" content="ca-pub-9869315317931338" />
+    <title>YouthCall</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <!-- Styles and scripts -->
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <script type="module" defer src="assets/scripts/index.js"></script>
+
+    <!-- Google Adsense -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9869315317931338"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="background-light-blur">
+      <div class="container">
+        <div class="navigation">
+          <a href="index.html">
+            <img
+              src="assets/images/youthcall-logo.svg"
+              alt="YouthCall Logo"
+              class="logo navigation__logo"
+            />
+          </a>
+
+          <button class="nav-toggle">
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+
+          <ul class="nav-list" aria-expanded="false">
+            <li class="nav-list-item">
+              <a href="index.html" class="nav-list-link">Почетна</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="posts.html?type=course" class="nav-list-link">Обуки</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="posts.html?type=project" class="nav-list-link"
+                >Проекти</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="posts.html?type=activity" class="nav-list-link"
+                >Активности</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="posts.html?type=volunteer" class="nav-list-link"
+                >Волонтерство</a
+              >
+            </li>
+            <li class="nav-list-item" data-hide="logged">
+              <a href="login.html" class="nav-list-link btn btn--secondary"
+                >Најави Се</a
+              >
+            </li>
+            <li class="nav-list-item nav-list__icon" data-hide="notLogged">
+              <span class="material-symbols-outlined"> account_circle </span>
+
+              <div class="nav-list__dropdown">
+                <a href="publish.html">Нов пост</a>
+                <a href="my-posts.html">Мои постови</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="margin-block--xl text--center">
+      <div class="container">
+        <h1 class="header-xl">За проектот</h1>
+
+        <p class="text--l margin-inline--auto">
+          Со оваа платформа имаме за цел да го решиме проблемот со ограничениот
+          пристап до информации за различни можности и иницијативи достапни за
+          младите луѓе во нашата заедница. На нашата платформа ќе ги најдете
+          сите потребни информации на едно место. Независно дали сте
+          заинтересирани за Еразмус проекти, волонтерство, обуки, настани или
+          други младински иницијативи, ние ви обезбедуваме лесен пристап до сите
+          достапни можности. Искористете ја нашата платформа како ваше средство
+          за истражување и промена. Присоединете се и бидете дел од заедницата
+          на младите кои ги искористуваат сите можности што им се нудат.
+        </p>
+
+        <div class="active-cards margin-top--m margin-inline--auto">
+          <div class="active-cards__card">
+            <p class="active-cards__card-number active-card--course"></p>
+            <p class="active-cards__card-description">Активни Обуки</p>
+          </div>
+
+          <div class="active-cards__card">
+            <p class="active-cards__card-number active-card--project"></p>
+            <p class="active-cards__card-description">Активни Проекти</p>
+          </div>
+
+          <div class="active-cards__card">
+            <p class="active-cards__card-number active-card--activity"></p>
+            <p class="active-cards__card-description">Активни Активности</p>
+          </div>
+
+          <div class="active-cards__card">
+            <p class="active-cards__card-number active-card--volunteer"></p>
+            <p class="active-cards__card-description">Активни Волонтерства</p>
+          </div>
+        </div>
+
+        <section class="margin-block--xl" aria-label="Behind the project">
+          <h2 class="header-l">Од креаторите</h2>
+          <p class="margin-inline--auto text--l">
+            Кога започнавме активно да се вклучуваме во активности за млади,
+            најголем проблем со кој се соочивме беше наоѓање на настани, проекти
+            и информации за истите и веруваме дека многу млади се среќаваат со
+            истиот проблем. Со оваа платформа сакаме да овозможиме лесен и брз
+            пристап, достапен за сите млади кои се заинтерсирани за вакви
+            активности. Искористете ја оваа платформа максимално и бидете
+            активни млади граѓани.
+          </p>
+
+          <div class="avatar-cards margin-block--m">
+            <div class="avatar-cards__card">
+              <img
+                class="avatar-cards__card-image"
+                src="assets/images/dimitar.jpg"
+                alt=""
+              />
+              <h3 class="header-m">Димитар Калапоцев</h3>
+              <p class="body-s">Веб Девелопер</p>
+            </div>
+
+            <div class="avatar-cards__card">
+              <img
+                class="avatar-cards__card-image"
+                src="assets/images/anamarija.jpg"
+                alt=""
+              />
+              <h3 class="header-m">Ана Марија Јованова</h3>
+              <p class="body-s">Студент - медицински науки</p>
+            </div>
+
+            <div class="avatar-cards__card">
+              <img
+                class="avatar-cards__card-image"
+                src="assets/images/dance.jpg"
+                alt=""
+              />
+              <h3 class="header-m">Данче Кирова</h3>
+              <p class="body-s">Студент - Фронт-енд Девелопмент</p>
+            </div>
+          </div>
+
+          <p class="financers__text text--s margin-inline--auto">
+            Оваа веб-страница е произведена со поддршка на Европската Комисија.
+            Неговата содржина е единствена одговорност на Ана Марија, Данче и
+            Димитар и не мора да ги одразува гледиштата на Европската Комисија.
+          </p>
+
+          <div class="financers__logos margin-top--m">
+            <img
+              class="financers__logos-logo"
+              src="assets/images/logos/eu-logo.png"
+              alt="Co-funded by the European Union Logo"
+            />
+            <img
+              class="financers__logos-logo"
+              src="assets/images/logos/scouts-logo.png"
+              alt="Scouts Logo"
+            />
+            <img
+              class="financers__logos-logo"
+              src="assets/images/logos/eu-with-you-logo.jpg"
+              alt="EU with you Logo"
+            />
+            <img
+              class="financers__logos-logo"
+              src="assets/images/logos/cid-logo.png"
+              alt="Center for intercultular dialog Logo"
+            />
+            <img
+              class="financers__logos-logo"
+              src="assets/images/logos/youth-agents-logo.jpg"
+              alt="Youth agents of change Logo"
+            />
+            <img
+              class="financers__logos-logo"
+              src="assets/images/logos/changemakers-logo.png"
+              alt="Changemakers Logo"
+            />
+            <img
+              class="financers__logos-logo"
+              src="assets/images/logos/novus-logo.png"
+              alt="Novus Logo"
+            />
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer background-dark">
+          <div class="footer__content">
+            <div class="footer__content-data">
+              <img
+                src="assets/images/youthcall-logo.svg"
+                alt="YouthCall Logo"
+                class="logo footer__content-data-logo"
+              />
+
+              <p class="footer__content-data-paragraph">
+                Aктуелни информации за можности за млади во нашиот регион,
+                вклучувајќи ги Еразмус+ проектите, волонтерствa и настани.
+              </p>
+            </div>
+            <div class="footer__content-links">
+              <ul class="footer__content-links-list">
+                <li class="footer__content-links-list-item">
+                  <a href="index.html">Почетна</a>
+                </li>
+                <li class="footer__content-links-list-item">
+                  <a href="about.html">За Проектот</a>
+                </li>
+              </ul>
+
+              <ul class="footer__content-links-list">
+                <li class="footer__content-links-list-item">
+                  <a href="posts.html?type=course">Обуки</a>
+                </li>
+                <li class="footer__content-links-list-item">
+                  <a href="posts.html?type=project">Проекти</a>
+                </li>
+                <li class="footer__content-links-list-item">
+                  <a href="posts.html?type=activity">Активности</a>
+                </li>
+                <li class="footer__content-links-list-item">
+                  <a href="posts.html?type=volunteer">Волонтерства</a>
+                </li>
+              </ul>
+
+              <ul class="footer__content-links-list">
+                <li class="footer__content-links-list-item">
+                  <a href="login.html">Најави Се</a>
+                </li>
+                <li
+                  class="footer__content-links-list-item"
+                  data-hide="notLogged"
+                >
+                  <a href="publish.html">Нов Пост</a>
+                </li>
+                <li
+                  class="footer__content-links-list-item"
+                  data-hide="notLogged"
+                >
+                  <a href="my-posts.html">Мои Постови</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__copyright">
+            <p class="footer__copyright-copyright">
+              Copyright &copy; <span>2023</span> YouthCall. All rights reserved.
+            </p>
+            <p class="footer__copyright-developedby">
+              Developed by
+              <a href="https://dimitark.com" target="_blank"
+                >Dimitar Kalapocev</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
