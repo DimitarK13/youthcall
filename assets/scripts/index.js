@@ -103,12 +103,6 @@ const printPosts = async (type) => {
     }
 
     posts.data.filteredPosts.forEach((post) => {
-      const imageBlob = new Blob([new Uint8Array(post.image.data.data)], {
-        type: post.image.contentType,
-      });
-
-      const imageUrl = URL.createObjectURL(imageBlob);
-
       const html = `
               <div class="posts__post post-single" id="${post._id}">
                 <a href="${post.website}" target="_blank" class="post-single__account-link body-s">
@@ -116,7 +110,7 @@ const printPosts = async (type) => {
                 </a>
                 <img
                   class="post-single__image"
-                  src="${imageUrl}"
+                  src="${serverUrl}${post.image}"
                   alt="${post.name}"
                 />
                 <h3 class="header-m post-single__heading">${post.name}</h3>
@@ -160,27 +154,21 @@ const getPostsByUsername = async () => {
     const posts = await data.json();
 
     posts.data.filteredPosts.forEach((post) => {
-      const imageBlob = new Blob([new Uint8Array(post.image.data.data)], {
-        type: post.image.contentType,
-      });
-
-      const imageUrl = URL.createObjectURL(imageBlob);
-
       const html = `
-                <div class="my-posts__post">
-                  <img
-                    class="my-posts__post-image"
-                    src="${imageUrl}"
-                    alt="${post.name}"
-                  />
-                  <div class="my-posts__post-content">
-                    <h2 class="my-posts__post-heading header-m">${post.name}</h2>
-                    <button class="my-posts__post-btn" data-post-id="${post._id}">
-                      <span class="material-symbols-outlined"> delete </span>
-                    </button>
-                  </div>
-                </div>
-              `;
+        <div class="my-posts__post">
+          <img
+            class="my-posts__post-image"
+            src="${serverUrl}${post.image}"
+            alt="${post.name}"
+          />
+          <div class="my-posts__post-content">
+            <h2 class="my-posts__post-heading header-m">${post.name}</h2>
+            <button class="my-posts__post-btn" data-post-id="${post._id}">
+              <span class="material-symbols-outlined"> delete </span>
+            </button>
+          </div>
+        </div>
+      `;
 
       myPostsContainer.insertAdjacentHTML('afterbegin', html);
     });

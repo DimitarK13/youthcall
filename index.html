@@ -52,7 +52,324 @@
     ></script>
   </head>
 
-  <body style="display: grid; height: 100vh; place-content: center">
-    <h1>We will be back with u shortly...</h1>
+  <body>
+    <nav class="background-light-blur">
+      <div class="container">
+        <div class="navigation">
+          <a href="index.html">
+            <img
+              src="assets/images/youthcall-logo.svg"
+              alt="YouthCall Logo"
+              class="logo navigation__logo"
+            />
+          </a>
+
+          <button class="nav-toggle">
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+
+          <ul class="nav-list" aria-expanded="false">
+            <li class="nav-list-item">
+              <a href="index.html" class="nav-list-link">Почетна</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="posts.html?type=course" class="nav-list-link">Обуки</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="posts.html?type=project" class="nav-list-link"
+                >Проекти</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="posts.html?type=activity" class="nav-list-link"
+                >Активности</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="posts.html?type=volunteer" class="nav-list-link"
+                >Волонтерство</a
+              >
+            </li>
+            <li class="nav-list-item" data-hide="logged">
+              <a href="login.html" class="nav-list-link btn btn--secondary"
+                >Најави Се</a
+              >
+            </li>
+            <li class="nav-list-item nav-list__icon" data-hide="notLogged">
+              <span class="material-symbols-outlined"> account_circle </span>
+
+              <div class="nav-list__dropdown">
+                <a href="publish.html">Нов пост</a>
+                <a href="my-posts.html">Мои постови</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero" aria-label="Hero Section">
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="hero__content-heading header-xl">
+              Информирај се, биди во тек!
+            </h1>
+
+            <p class="hero__content-text text--m">
+              Добредојтовте во свет со бескрајни можности. YouthCall е платформа
+              формирана да ви обезбеди актуелни информации за можности за
+              активности, проекти, обуки од најразлични теми, младински размени,
+              курсеви и волонтерски можности.
+            </p>
+
+            <a href="#learn-more" class="hero__content-button btn btn--arrow"
+              >Дознај повеќе
+              <span class="material-symbols-outlined"> arrow_downward </span></a
+            >
+
+            <div class="active-cards margin-top--m">
+              <div class="active-cards__card">
+                <p class="active-cards__card-number active-card--course"></p>
+                <p class="active-cards__card-description">Активни Обуки</p>
+              </div>
+
+              <div class="active-cards__card">
+                <p class="active-cards__card-number active-card--project"></p>
+                <p class="active-cards__card-description">Активни Проекти</p>
+              </div>
+
+              <div class="active-cards__card">
+                <p class="active-cards__card-number active-card--activity"></p>
+                <p class="active-cards__card-description">Активни Активности</p>
+              </div>
+
+              <div class="active-cards__card">
+                <p class="active-cards__card-number active-card--volunteer"></p>
+                <p class="active-cards__card-description">
+                  Активни Волонтерства
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="assets/images/hero.jpg"
+          alt="Workshop where youngsters work on a flip chart poster writing down where they search information from"
+          class="hero__image"
+        />
+      </section>
+
+      <section
+        class="our-goal background-light margin-block--xl padding-block--xl"
+        aria-label="Our Goal"
+        id="learn-more"
+      >
+        <div class="our-goal__container">
+          <div class="our-goal__container-content">
+            <h2 class="our-goal__container-content-heading header-l">
+              Нашата Цел
+            </h2>
+            <p class="our-goal__container-content-text">
+              Нашата иницијатива има за цел да промовира младински ангажман,
+              волонтирање и активизам во нашата заедница преку решавање на
+              проблемот со ограничениот пристап до информации за различни
+              можности и иницијативи достапни за младите луѓе.
+            </p>
+
+            <a
+              href="about.html"
+              class="our-goal__container-content-button btn btn--primary"
+              >Дознај повеќе</a
+            >
+          </div>
+
+          <img
+            src="assets/images/goal.jpg"
+            alt="Girl holding phone with instagram open on youthcall_platform"
+            class="our-goal__container-image"
+          />
+        </div>
+      </section>
+
+      <section
+        class="financers margin-block--xl text--center"
+        aria-label="Financers of this project"
+      >
+        <div class="container">
+          <p class="financers__text text--s margin-inline--auto">
+            Оваа веб-страница е произведена со поддршка на Европската Комисија.
+            Неговата содржина е единствена одговорност на Ана Марија, Данче и
+            Димитар и не мора да ги одразува гледиштата на Европската Комисија.
+          </p>
+
+          <div class="financers__logos margin-top--m">
+            <img
+              class="financers__logos-logo"
+              src="assets/images/logos/eu-logo.png"
+              alt="Co-funded by the European Union Logo"
+            />
+            <img
+              class="financers__logos-logo"
+              src="assets/images/logos/scouts-logo.png"
+              alt="Scouts Logo"
+            />
+            <img
+              class="financers__logos-logo"
+              src="assets/images/logos/eu-with-you-logo.jpg"
+              alt="EU with you Logo"
+            />
+            <img
+              class="financers__logos-logo"
+              src="assets/images/logos/cid-logo.png"
+              alt="Center for intercultular dialog Logo"
+            />
+            <img
+              class="financers__logos-logo"
+              src="assets/images/logos/youth-agents-logo.jpg"
+              alt="Youth agents of change Logo"
+            />
+            <img
+              class="financers__logos-logo"
+              src="assets/images/logos/changemakers-logo.png"
+              alt="Changemakers Logo"
+            />
+            <img
+              class="financers__logos-logo"
+              src="assets/images/logos/novus-logo.png"
+              alt="Novus Logo"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="faq text--center margin-block--xl"
+        aria-label="Frequently Asked Questions"
+      >
+        <div class="container">
+          <h2 class="faq__heading header-l">FAQs</h2>
+          <p class="faq__text text--s margin-inline--auto">
+            Најчесто поставувани прашања:
+          </p>
+
+          <div class="faq__questions margin-top--m">
+            <div class="faq__questions-single">
+              <p>Дали секој може да има кориснички профил?</p>
+
+              <div class="faq__questions-single-answer">
+                <p>
+                  Не, корисничките профили се исклучиво за организации.
+                  Корисничките профили служат за објавување на нови постови на
+                  кои младите ќе можат да се пријават и учествуваат.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq__questions-single">
+              <p class="faq__questions-single-q">
+                Дали платформата ќе добие мобилна апликација?
+              </p>
+
+              <div class="faq__questions-single-answer">
+                <p class="faq__questions-single-answer-a">
+                  Во моментот YouthCall е само веб платформа. За повеќе
+                  информации и новости околу обнови на платформата, заследете не
+                  на нашиот Инстаграм профил - @youthcall_platform.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq__questions-single">
+              <p class="faq__questions-single-q">Како до кориснички профил?</p>
+
+              <div class="faq__questions-single-answer">
+                <p class="faq__questions-single-answer-a">
+                  Во моментот не е возможно регистрирање преку нашата платформа
+                  и тоа ќе треба да го направите со контактирање на Димитар
+                  Калапоцев на dimikalapocev@gmail.com.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer background-dark">
+          <div class="footer__content">
+            <div class="footer__content-data">
+              <img
+                src="assets/images/youthcall-logo.svg"
+                alt="YouthCall Logo"
+                class="logo footer__content-data-logo"
+              />
+
+              <p class="footer__content-data-paragraph">
+                Aктуелни информации за можности за млади во нашиот регион,
+                вклучувајќи ги Еразмус+ проектите, волонтерствa и настани.
+              </p>
+            </div>
+            <div class="footer__content-links">
+              <ul class="footer__content-links-list">
+                <li class="footer__content-links-list-item">
+                  <a href="index.html">Почетна</a>
+                </li>
+                <li class="footer__content-links-list-item">
+                  <a href="about.html">За Проектот</a>
+                </li>
+              </ul>
+
+              <ul class="footer__content-links-list">
+                <li class="footer__content-links-list-item">
+                  <a href="posts.html?type=course">Обуки</a>
+                </li>
+                <li class="footer__content-links-list-item">
+                  <a href="posts.html?type=project">Проекти</a>
+                </li>
+                <li class="footer__content-links-list-item">
+                  <a href="posts.html?type=activity">Активности</a>
+                </li>
+                <li class="footer__content-links-list-item">
+                  <a href="posts.html?type=volunteer">Волонтерства</a>
+                </li>
+              </ul>
+
+              <ul class="footer__content-links-list">
+                <li class="footer__content-links-list-item" data-hide="logged">
+                  <a href="login.html">Најави Се</a>
+                </li>
+                <li
+                  class="footer__content-links-list-item"
+                  data-hide="notLogged"
+                >
+                  <a href="publish.html">Нов Пост</a>
+                </li>
+                <li
+                  class="footer__content-links-list-item"
+                  data-hide="notLogged"
+                >
+                  <a href="my-posts.html">Мои Постови</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__copyright">
+            <p class="footer__copyright-copyright">
+              Copyright &copy; <span>2023</span> YouthCall. All rights reserved.
+            </p>
+            <p class="footer__copyright-developedby">
+              Developed by
+              <a href="https://dimitark.com" target="_blank"
+                >Dimitar Kalapocev</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
