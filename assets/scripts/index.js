@@ -110,7 +110,7 @@ const printPosts = async (type) => {
                 </a>
                 <img
                   class="post-single__image"
-                  src="${serverUrl}${post.image}"
+                  src="${post.image}"
                   alt="${post.name}"
                 />
                 <h3 class="header-m post-single__heading">${post.name}</h3>
@@ -158,7 +158,7 @@ const getPostsByUsername = async () => {
         <div class="my-posts__post">
           <img
             class="my-posts__post-image"
-            src="${serverUrl}${post.image}"
+            src="${post.image}"
             alt="${post.name}"
           />
           <div class="my-posts__post-content">
