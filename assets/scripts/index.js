@@ -213,6 +213,19 @@ const getMyPosts = () => {
   const myPostsContainer = document.querySelector('.my-posts');
   if (!myPostsContainer) return;
 
+  const username = sessionStorage.getItem('username');
+  const website = sessionStorage.getItem('website');
+  const accountName = sessionStorage.getItem('accountName');
+  const loggedIn = sessionStorage.getItem('loggedIn');
+
+  if (!username || !website || !accountName || !loggedIn) {
+    myPostsContainer.insertAdjacentHTML(
+      'beforebegin',
+      `<p class='text--center'>За да ги видите вашите постови, мора да бидете најавени</p>`
+    );
+    return;
+  }
+
   myPostsContainer.addEventListener('click', (e) => {
     const deleteBtn = e.target.closest('.my-posts__post-btn');
     if (!deleteBtn) return;
@@ -294,6 +307,7 @@ const uploadPost = () => {
   const website = sessionStorage.getItem('website');
   const accountName = sessionStorage.getItem('accountName');
   const errorMessage = document.querySelector('.error-message');
+  const loggedIn = sessionStorage.getItem('loggedIn');
 
   if (!form) return;
 
@@ -322,6 +336,11 @@ const uploadPost = () => {
       formData.append('username', username);
       formData.append('website', website);
       formData.append('accountName', accountName);
+
+      if (!username || !website || !accountName || !loggedIn) {
+        errorMessage.textContent = 'За да продолжите мора да бидете најавени!';
+        return;
+      }
 
       fetch(`${serverUrl}api/data`, {
         method: 'POST',
