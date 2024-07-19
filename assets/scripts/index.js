@@ -327,11 +327,25 @@ const uploadPost = () => {
       formData.append('type', type.value);
       formData.append('name', name.value);
       formData.append('where', where.value);
-      formData.append('when', when.value);
+      formData.append(
+        'when',
+        new Date(when.value).toLocaleDateString('de-DE', {
+          day: '2-digit',
+          month: '2-digit',
+          year: 'numeric',
+        })
+      );
       formData.append('who', who.value);
-      formData.append('deadline', deadline.value);
+      formData.append(
+        'deadline',
+        new Date(deadline.value).toLocaleDateString('de-DE', {
+          day: '2-digit',
+          month: '2-digit',
+          year: 'numeric',
+        })
+      );
       formData.append('link', link.value);
-      formData.append('image', image.files[0]); // Assuming 'image' is an input element of type file
+      formData.append('image', image.files[0]);
       formData.append('description', description.value);
       formData.append('username', username);
       formData.append('website', website);
