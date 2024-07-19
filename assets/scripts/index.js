@@ -411,10 +411,10 @@ const uploadPost = () => {
       image.classList.add('input-field__input--invalid');
       isValid = false;
     } else {
-      const maxSize = 5 * 1024 * 1024;
+      const maxSize = 1 * 1024 * 1024;
       if (image.files[0].size > maxSize) {
         image.classList.add('input-field__input--invalid');
-        errorMessage.textContent = 'Image cannot be bigger than 5mb';
+        errorMessage.textContent = 'Image cannot be bigger than 1mb';
         isValid = false;
       } else {
         image.classList.remove('input-field__input--invalid');
