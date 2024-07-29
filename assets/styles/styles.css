@@ -827,6 +827,10 @@ nav {
   margin-bottom: 1rem;
 }
 
+.post-single__description {
+  word-break: break-all;
+}
+
 .post-single__info {
   margin-block: 2rem;
   display: flex;
